@@ -1,0 +1,105 @@
+@font-face {
+    src: url(Poppins-Light.otf);
+    font-family: poppins;
+ }
+ @font-face {
+     src: url(I\ Love\ Glitter\ -\ OTF.otf);
+     font-family: glitter;
+ }
+ @font-face {
+     src: url(paperdaisy-demo.ttf);
+     font-family: daisy;
+ }
+ @font-face {
+     src: url(Aleo-Regular.otf);
+     font-family: aleo;
+ }
+ @font-face {
+     src: url(sweet\ purple.otf);
+     font-family: sweet;
+ }
+ @font-face {
+     src: url(veteran_typewriter.ttf);
+     font-family: typewriter;
+ }
+.bgimg{
+    background-image: linear-gradient(120deg,#35B390,#3597B3,#3558B3);
+
+}
+.heading {
+    margin: 0px;
+    padding: 50px 0px;
+    text-align: center;
+    color: #016064;
+    font-family: typewriter;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.links {
+    font-family: poppins;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+.button {
+    border-radius: 35px !important;
+    padding: 5px 30px !important;
+    background-color: #d2c4d6 !important;
+    border: transparent !important;
+}
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
+.bgcolor{
+    margin: 40px 0px;
+    background-color: #DCDBDF;
+}
+.bgcolor h3 {
+    text-align: center;
+    font-family: daisy;
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 25px 0px;
+    color: #a86e64;
+}
+.bgcolor p{
+    text-align: left;
+    font-family: poppins;
+    color: #48494B;
+    font-size: 20px;
+    padding: 20px 30px;
+    display: inline-block;
+    margin: 0px;
+}
+.input {
+    border-radius: 35px;
+    padding: 5px 30px;
+    border: transparent;
+    font-family: poppins;
+    font-size: 20px;
+    outline: transparent;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+.result {
+    display: block;
+    padding: 0px 100px;
+    margin-bottom: 25px;
+}
+::placeholder {
+    font-size: 20px;
+    font-family: poppins;
+    color: black;
+}
+.entry {
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 10px;
+    height: 30px;
+    width: 10%;
+    outline: none;
+    margin-left: 30px;
+}

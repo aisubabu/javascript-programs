@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <link rel="icon" href="images/kisspng-java-development-kit-software-development-kit-comp-programming-language-icon-5b4b9cb1e74f20.0073080715316819699475.jpg" type="image">
+    <link rel="stylesheet" href="javascript.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="margin: 0px;">
+<div class="container-fluid bgimg">
+    <p class="heading">Java Script Programs</p>
+    <div class="row links">
+        <div class="col-md-4">
+            <a href="#Strings" class="button">Strings</a>
+        </div>
+        <div class="col-md-4">
+            <a href="#Dates" class="button">Dates</a>
+        </div>
+        <div class="col-md-4">
+            <a href="#Numbers" class="button">Numbers</a>
+        </div>
+    </div>  
+    <div class="container bgcolor" id="Strings">
+        <h3>[Strings]</h3>
+        <p>* Create a new string adding "Py" in front of a given string. If the given string begins with "Py" then return the original string.</p>
+        <input type="text" class="entry" id="word">
+        <input type="button" onclick="WordCheck()" class="input" value="Check">
+        <p class="result" id="wordres"></p>
+        <p>* Remove a character at the specified position of a given string and return the new string.</p>
+        <br>
+        <p>Word:</p>
+        <input type="text" class="entry" id="text">
+        <p>Index:</p>
+        <input type="number" class="entry" id="chr">
+        <input type="button" onclick="RemoveChar()" class="input" value="Check">
+        <p id="finstr" class="result"></p>
+        <p>* Create a new string from a given string changing the position of first and last characters.</p>
+        <br>
+        <input type="text" class="entry" id="swap">
+        <input type="button" onclick="swap()" class="input" value="Check">
+        <p id="fintext" class="result"></p>
+        <p>* Create a new string from a given string taking the last 3 characters and added at both the front and back.</p>
+        <br>
+        <input type="text" class="entry" id="char3">
+        <input type="button" onclick="swap3()" class="input" value="Append">
+        <p id="swap3" class="result"></p>
+        <br>
+        <p>* Check whether a string starts with 'Java' and false otherwise.</p>
+        <br>
+        <input type="text" class="entry" id="java">
+        <input type="button" onclick="findjava()" class="input" value="Check">
+        <p id="findjava" class="result"></p>
+        <p>* Check whether a string "Script" presents at 5th (index 4) position in a given string, if "Script" presents in the string return the string without "Script" otherwise return the original one.</p>
+        <br>
+        <input type="text" class="entry" id="scrpt">
+        <input type="button" onclick="findscript()" class="input" value="Check">
+        <p id="scr" class="result"></p>
+        <p>* Create new string with first 3 characters are in lower case from a given string. If the string length is less than 3 convert all the characters in upper case.</p>
+        <br>
+        <input type="text" class="entry" id="lower">
+        <input type="button" onclick="lowercase()" class="input" value="Check">
+        <p id="lowercase" class="result"></p>
+        <br>
+        <p>* Program to reverse a given string.</p>
+        <input type="text" class="entry" id="reversetext">
+        <br>
+        <input type="button" onclick="Reverse()" class="input" value="Reverse">
+        <p id="reverse" class="result"></p>
+        <p>* Program to replace every character in a given string with the character following it in the alphabet.</p>
+        <br>
+        <input type="text" class="entry" id="character">
+        <input type="button" onclick="Charcode()" class="input" value="Change">
+        <p id="charcode" class="result"></p>
+        <br>
+        <p>* Capitalize the first letter of each word of a given string.</p>
+        <br>
+        <input type="text" class="entry" id="capital">
+        <input type="button" onclick="Capitalize()" class="input" value="Capitalize">
+        <p id="Capitalize" class="result" style="text-transform: capitalize;"></p>
+        <br>
+        <p>* Convert the letters of a given string in alphabetical order.</p>
+        <br>
+        <input type="text" class="entry" id="order">
+        <input type="button" onclick="sorttext()" class="input" value="Sort">
+        <p id="sorttext" class="result"></p>
+        <br>
+        <p>* Count the number of vowels in a given string.</p>
+        <br>
+        <input type="text" class="entry" id="voweltext">
+        <input type="button" onclick="vowels()" class="input" value="Change">
+        <p id="vowels" class="result"></p>
+        <p>* Concatenate two strings and return the result. If the length of the strings are not same then remove the characters from the longer string.</p>
+        <br>
+        <input type="text" class="entry" id="concattext1">
+        <input type="text" class="entry" id="concattext2">
+        <input type="button" onclick="Concatenate()" class="input" value="Change">
+        <p id="concat" class="result"></p>
+    </div>
+    <div class="container bgcolor" id="Dates">
+        <h3>[Dates]</h3>
+        <p>* Display the current day and time </p>
+        <input type="button" onclick="currentday()" class="input" value="Day and Time">
+        <p  class="result" id="currentday"></p>
+        <br>
+        <p>* Display current Date</p>
+        <input type="button" onclick="currentdate()" class="input" value="Date">
+        <p class="result" id="currentdate"></p>
+        <br>
+        <p>* Check for leap year</p>
+        <input type="number" class="entry" id="year">
+        <br>
+        <input type="button" onclick="leapyear()" class="input" value="Leap Year">
+        <p class="result" id="leap"></p>
+        <br>
+        <p>* Check for Jan 1 being a Sunday</p>
+        <input type="number" class="entry" id="sunyear">
+        <br>
+        <input type="button" onclick="holiyear()" class="input" value="Holiday">
+        <p class="result" id="holiyear"></p>
+        <br>
+        <p>* Program to convert a given minutes to hours and minutes.</p>
+        <input type="number" class="entry" id="minutes">
+        <br>
+        <input type="button" onclick="time()" class="input" value="Convert">
+        <p class="result" id="time"></p>
+    </div>
+    <div class="container bgcolor" id="Numbers">
+        <h3>[Numbers]</h3>
+        <p>* Area of a triangle</p>
+        <input type="number" class="entry" id="entryA">
+        <input type="number" class="entry" id="entryB">
+        <input type="number" class="entry" id="entryC">
+        <br>
+        <input type="button" onclick="Area()" class="input" value="Area">
+        <p class="result" id="Area"></p>
+        <br>
+        <p>* Enter a number from 1-10</p>
+        <input type="number" class="entry" id="number">
+        <br>
+        <input type="button" onclick="Match()" class="input" value="Enter">
+        <p class="result" id="match"></p>
+        <br>
+        <p>* Multiplication and Division</p>
+        <input type="number" class="entry" id="fnum">
+        <input type="number" class="entry" id="snum">
+        <br>
+        <input type="button" onclick="Multi()" class="input" value="Multiplication">
+        <p class="result" id="mulres"></p>
+        <input type="button" onclick="Divi()" class="input" value="Division">
+        <p class="result" id="divres"></p>
+        <br>
+        <p>* Convert from Celcius to Fahrenheit</p>
+        <input type="number" class="entry" id="temp">
+        <br>
+        <input type="button" onclick="Convert()" class="input" value="Convert">
+        <p class="result" id="tempres"></p>
+        <br>
+        <p>* Get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.</p>
+        <input type="number" class="entry" id="difnum">
+        <input type="button" onclick="Difference()" class="input" value="Convert">
+        <p class="result" id="difference"></p>
+        <p>* Compute the sum of the two given integers. If the two values are same, then returns triple their sum.</p>
+        <input type="number" class="entry" id="sumnum1">
+        <input type="number" class="entry" id="sumnum2">
+        <input type="button" onclick="Sum()" class="input" value="Sum">
+        <p class="result" id="sum"></p>
+        <p>* Check two given numbers and return true if one of the number is 50 or if their sum is 50.</p>
+        <br>
+        <input type="number" class="entry" id="num1">
+        <input type="number" class="entry" id="num2">
+        <input type="button" onclick="Check()" class="input" value="Check">
+        <p class="result" id="check"></p>
+        <p>* Check from two given integers, whether one is positive and another one is negative.</p>
+        <br>
+        <input type="number" class="entry" id="int1">
+        <input type="number" class="entry" id="int2">
+        <input type="button" onclick="Sign()" class="input" value="Check">
+        <p class="result" id="sign"></p>
+        <p>* Check whether a given positive number is a multiple of 3 or a multiple of 7.</p>
+        <br>
+        <input type="number" class="entry" id="factor">
+        <input type="button" onclick="factor()" class="input" value="Check">
+        <p class="result" id="factorres"></p>
+        <p>* Check whether three given integer values are in the range 50..99 (inclusive).</p>
+        <br>
+        <input type="number" class="entry" id="firstnum">
+        <input type="number" class="entry" id="secondnum">
+        <input type="number" class="entry" id="thirdnum">
+        <input type="button" onclick="range()" class="input" value="Check">
+        <p class="result" id="range"></p>
+        <br>
+        <p>* Find the largest of three given integers</p>
+        <br>
+        <input type="number" class="entry" id="larnum1">
+        <input type="number" class="entry" id="larnum2">
+        <input type="number" class="entry" id="larnum3">
+        <input type="button" onclick="largest()" class="input" value="Largest">
+        <p class="result" id="largest"></p>
+        <br>
+        <p>*  Find a value which is nearest to 100 from two different given integer values.</p>
+        <br>
+        <input type="number" class="entry" id="firstint">
+        <input type="number" class="entry" id="secondint">
+        <input type="button" onclick="near100()" class="input" value="Check">
+        <p class="result" id="near100"></p>
+        <p>* Check whether the last digit of the three given positive integers is same.</p>
+        <br>
+        <input type="number" class="entry" id="lastnum1">
+        <input type="number" class="entry" id="lastnum2">
+        <input type="number" class="entry" id="lastnum3">
+        <input type="button" onclick="lastnum()" class="input" value="Check">
+        <p class="result" id="lastnum"></p>
+        <br>
+        <p>* Compute the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.</p>
+        <input type="number" class="entry" id="number1">
+        <input type="number" class="entry" id="number2">
+        <input type="button" onclick="Add()" class="input" value="Add">
+        <p class="result" id="add"></p>
+        <p>* Check whether three given numbers are increasing in strict mode or in soft mode.</p>
+        <br>
+        <input type="number" class="entry" id="sort1">
+        <input type="number" class="entry" id="sort2">
+        <input type="number" class="entry" id="sort3">
+        <input type="button" onclick="sort()" class="input" value="Check">
+        <p class="result" id="sort"></p>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
